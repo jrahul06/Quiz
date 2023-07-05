@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-const { createPool } = require('mysql')
+const { createPool } = require('mysql');
 
 const pool = createPool({
    host: 'localhost',
@@ -8,7 +8,8 @@ const pool = createPool({
    password: '',
    database: 'quiz',
    connectionLimit: 10
-})
+});
+
 var data;
 
 pool.query(`select * from user_role`, (err, res, fields) => {
