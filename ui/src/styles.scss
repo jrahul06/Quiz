@@ -4,78 +4,91 @@
 @tailwind utilities;
 // @import 'tippy.js/dist/tippy.css';
 
-::-webkit-scrollbar-track{border-radius:0px!important;background-color: inherit;}
-::-webkit-scrollbar{height:5px;background-color: inherit;width: 7px !important;}
-::-webkit-scrollbar:vertical{width:7px;background-color: #eee; margin-right: 5px;}
-::-webkit-scrollbar-thumb{border-radius:10px!important;background-color: #c2c2c2;}
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;  
-    color: #4e4e4e;
+::-webkit-scrollbar-track {
+  border-radius: 0px !important;
+  background-color: inherit;
+}
+::-webkit-scrollbar {
+  height: 5px;
+  background-color: inherit;
+  width: 7px !important;
+}
+::-webkit-scrollbar:vertical {
+  width: 7px;
+  background-color: #eee;
+  margin-right: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: #c2c2c2;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    overflow-y: hidden;
-    box-sizing: border-box;
-    background: theme('colors.bg.100');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #4e4e4e;
 }
 
-p{
-    @apply text-sm;
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  background: theme("colors.bg.100");
 }
 
-a{
-    color: theme('colors.highlight.200');
+p {
+  @apply text-sm;
 }
 
-label{
-    @apply text-sm;
+a {
+  color: theme("colors.highlight.200");
+}
+
+label {
+  @apply text-sm;
 }
 
 ul.no_bullets {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 select {
-    @apply text-sm leading-7 px-2 border-1 border-[#ededed] focus:shadow rounded-md bg-bg-100 outline-none;
+  @apply text-sm leading-7 px-2 border-1 border-[#ededed] focus:shadow rounded-md bg-bg-100 outline-none;
 }
 
 // textarea{
 //     @apply form-control block h-20 w-full px-3 py-1.5 text-xs  text-gray-700  bg-white bg-clip-padding border-1 border-solid border-gray-300 rounded-lg transition ease-in-out m-0  focus:outline-none focus:border-highlight-100 focus:ring-1 resize-none
 // }
 
-.btn{
-    height: 31px;
-    padding: 2px 10px!important;
-    font-size: theme('fontSize.sm');
-    font-weight: 500;
-    border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    transition: 0.3s all ease-out;
+.btn {
+  padding: 2px 10px;
+  font-size: theme("fontSize.sm");
+  font-weight: 500;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  transition: 0.3s all ease-out;
 }
 
-.btn_blue_border{
-    border: 2px solid theme('colors.primary.100');
-    color: theme('colors.primary.100');
+.btn_blue_border {
+  border: 2px solid theme("colors.primary.100");
+  color: theme("colors.primary.100");
 }
 
-.btn_blue_border:hover{
-    border: 2px solid theme('colors.primary.100');
-    background: theme('colors.primary.100');
-    color: theme('colors.text.500');
+.btn_blue_border:hover {
+  border: 2px solid theme("colors.primary.100");
+  background: theme("colors.primary.100");
+  color: theme("colors.text.500");
 }
 
-.btn_blue{
-    border: 2px solid theme('colors.primary.200');
-    background: theme('colors.primary.200');
-    color: theme('colors.text.500');
+.btn_blue {
+  border: 2px solid theme("colors.primary.200");
+  background: theme("colors.primary.200");
+  color: theme("colors.text.500");
 }
 
 .nospin::-webkit-inner-spin-button,
@@ -83,68 +96,68 @@ select {
   -webkit-appearance: none;
 }
 
-.btn_blue:hover{
-    border: 2px solid theme('colors.primary.100');
-    background: theme('colors.primary.100');
+.btn_blue:hover {
+  border: 2px solid theme("colors.primary.100");
+  background: theme("colors.primary.100");
 }
 
-.btn_red_border{
-    border: 2px solid theme('colors.danger.100');
-    color: theme('colors.danger.100');
+.btn_red_border {
+  border: 2px solid theme("colors.danger.100");
+  color: theme("colors.danger.100");
 }
 
-.btn_red_border:hover{
-    border: 2px solid theme('colors.danger.100');
-    background: theme('colors.danger.100');
-    color: theme('colors.text.500');
+.btn_red_border:hover {
+  border: 2px solid theme("colors.danger.100");
+  background: theme("colors.danger.100");
+  color: theme("colors.text.500");
 }
 
-.btn_red{
-    border: 2px solid theme('colors.danger.100');
-    background: theme('colors.danger.100');
-    color: theme('colors.white');
+.btn_red {
+  border: 2px solid theme("colors.danger.100");
+  background: theme("colors.danger.100");
+  color: theme("colors.white");
 }
 
-.btn_red:hover{
-    border: 2px solid theme('colors.danger.200');
-    background: theme('colors.danger.200');
+.btn_red:hover {
+  border: 2px solid theme("colors.danger.200");
+  background: theme("colors.danger.200");
 }
 
-.btn_reset{
+.btn_reset {
   @apply text-sm tracking-wide text-primary-100;
 }
 
-.btn_hyreo{
-    border: 1.5px solid theme('colors.hyreo.main');
-    background: theme('colors.hyreo.main');
-    color: theme('colors.text.500');
+.btn_hyreo {
+  border: 1.5px solid theme("colors.hyreo.main");
+  background: theme("colors.hyreo.main");
+  color: theme("colors.text.500");
 }
 
 .btn_hyreo:hover {
-    border: 1.5px solid theme('colors.hyreo.dark');
-    background: theme('colors.hyreo.dark');
+  border: 1.5px solid theme("colors.hyreo.dark");
+  background: theme("colors.hyreo.dark");
 }
 
-.btn_cancel{
-    border: 1.5px solid theme('colors.border');
-    background: theme('colors.bg.100');
-    color: theme('colors.text.200');
+.btn_cancel {
+  border: 1.5px solid theme("colors.border");
+  background: theme("colors.bg.100");
+  color: theme("colors.text.200");
 }
 
-.btn_cancel:hover{
-    border: 1.5px solid theme('colors.border');
-    background: theme('colors.bg.220');
+.btn_cancel:hover {
+  border: 1.5px solid theme("colors.border");
+  background: theme("colors.bg.220");
 }
 
-.btn-success{
-  background-color: theme('colors.green.400')!important;
-  border: 1.5px solid theme('colors.green.400')!important;
+.btn-success {
+  background-color: theme("colors.green.400") !important;
+  border: 1.5px solid theme("colors.green.400") !important;
 }
 
-.btn-cancel{
-  border: 1.5px solid theme('colors.border')!important;;
-  background: theme('colors.bg.100')!important;;
-  color: theme('colors.text.200')!important;;
+.btn-cancel {
+  border: 1.5px solid theme("colors.border") !important;
+  background: theme("colors.bg.100") !important;
+  color: theme("colors.text.200") !important;
 }
 // .close_icon{
 //     display: inline-block;
