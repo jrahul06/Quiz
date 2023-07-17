@@ -19,6 +19,11 @@ module.exports = {
     //     'exo-semibold':['Exo2-SemiBold'],
     //     'exo-bold':['Exo2-Bold'],
     //   },
+      fontFamily: {
+        sans: ['shanti'],
+        'shanti':['shanti'],
+        'basic':['basic'],
+      },
       
       boxShadow:{
         box:'3px 3px 10px 0px #0000001a',

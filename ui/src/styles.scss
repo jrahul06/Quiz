@@ -4,6 +4,16 @@
 @tailwind utilities;
 // @import 'tippy.js/dist/tippy.css';
 
+@font-face {
+  font-family: 'basic';
+  src: url('./assets/fonts/basic/Basic-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'shanti';
+  src: url('./assets/fonts/shanti/Shanti-Regular.ttf');
+}
+
 ::-webkit-scrollbar-track {
   border-radius: 0px !important;
   background-color: inherit;

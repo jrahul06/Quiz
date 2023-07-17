@@ -7,9 +7,9 @@
     <h1 class="mb-6">Welcome to free quiz challenge</h1>
     <p class="text-center">Select your preferred level :</p>
     <div class="block my-2">
-      <button class="btn btn_blue block my-2 w-24 mx-auto">Hard</button>
-      <button class="btn btn_blue block my-2 w-24 mx-auto">Medium</button>
-      <button class="btn btn_blue block my-2 w-24 mx-auto">Low</button>
+      <button (click)="onSelectCategory(1)" class="btn btn_blue block my-2 w-24 mx-auto">Hard</button>
+      <button (click)="onSelectCategory(2)" class="btn btn_blue block my-2 w-24 mx-auto">Medium</button>
+      <button (click)="onSelectCategory(3)" class="btn btn_blue block my-2 w-24 mx-auto">Low</button>
     </div>
   </div>
 </div>

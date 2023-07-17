@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import {
   Ripple,
   Input,
@@ -11,7 +12,19 @@ import {
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
- ngOninit() {
-  initTE({ Ripple, Input });
- }
+  emailId : string = ''; 
+
+  constructor(private router : Router) {}
+
+  ngOninit() {
+    initTE({ Ripple, Input });
+  }
+
+  onRegister() {
+    if (this.emailId) {
+      this.router.navigate(['category']);
+    } else {
+      alert('error');
+    }
+  }
 }

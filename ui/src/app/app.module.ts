@@ -7,6 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { LevelComponent } from './level/level.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ScoreComponent } from './score/score.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ScoreComponent } from './score/score.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
