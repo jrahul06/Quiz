@@ -7,12 +7,18 @@
   height: 100%;
 }
 
-.category-wrap{
+.category-wrap {
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: 2fr;
-  grid-column-gap: 20px;
+  grid-column-gap: 0px;
   grid-row-gap: 20px;
   justify-items: stretch;
   align-items: stretch;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
