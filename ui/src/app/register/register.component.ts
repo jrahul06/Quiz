@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import {
   Ripple,
@@ -13,6 +14,7 @@ import {
 })
 export class RegisterComponent {
   emailId : string = ''; 
+  name : string = ''; 
 
   constructor(private router : Router) {}
 
@@ -20,11 +22,12 @@ export class RegisterComponent {
     initTE({ Ripple, Input });
   }
 
-  onRegister() {
-    if (this.emailId) {
+  onRegister( form : NgForm) {
+    if (form.valid) {
+      console.log(form);
       this.router.navigate(['category']);
     } else {
-      alert('error');
+      alert('Fill all fields');
     }
   }
 }
