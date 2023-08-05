@@ -5,14 +5,14 @@
     class="flex flex-col justify-center items-center card bg-bg-100 border-border border-1 p-10 rounded text-center shadow-lg w-1/2 h-auto"
   >
     <h1 class="mb-6">Welcome to free quiz challenge</h1>
-    <p class="text-center">Select your preferred category :</p>
-    <div class="block my-2 w-full">
+    <p class="text-center mb-4">Select your preferred category :</p>
+    <div *ngFor="let category of categories" class="block my-2 w-full cursor-pointer hover:bg-bg-300 transition-all" (click)="onSelectCategory(category)">
       <div class="w-full border-border border-1 category-wrap rounded h-24">
         <div class="overflow-hidden rounded-l">
           <img
             height="100%"
             width="100%"
-            src="https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            [src]="category.image"
             alt="image"
             srcset=""
           />
@@ -20,10 +20,9 @@
         <div
           class="w-full flex flex-col justify-center text-left py-2 px-4 h-24 text-clip overflow-hidden ..."
         >
-          <h6 class="font-basic font-bold">Cinema</h6>
+          <h6 class="font-basic font-bold">{{category.label}}</h6>
           <p class="">
-            Colorful and imaginative animated creations, bringing joy and
-            laughter to all ages.
+            {{category.description}}
           </p>
         </div>
       </div>

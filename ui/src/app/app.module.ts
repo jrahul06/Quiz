@@ -8,6 +8,8 @@ import { LevelComponent } from './level/level.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { ScoreComponent } from './score/score.component';
 import { FormsModule } from '@angular/forms';
+import { ApiService } from './service/api.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
